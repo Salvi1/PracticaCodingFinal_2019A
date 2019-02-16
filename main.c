@@ -16,8 +16,24 @@ int omarAlvizo()
 	return r;
 }
 
+int ricardoRios(){
+
+	char* nombre = "Ricardo Rios";
+	int len = strlen(nombre);
+	int i, r = 0;
+
+	for(i = 0; i < len;i++)
+	{
+		r += nombre[i];
+	}
+
+	return r;
+
+}
+
 int main()
 {
-	printf("Mi valor en ASCCI es %i", omarAlvizo());
+	printf("Mi valor en ASCCI es %i\n", omarAlvizo());
+	printf("Mi valor en ASCCI es %i\n", ricardoRios());
 	return 0;
 }
