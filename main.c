@@ -15,6 +15,20 @@ int omarAlvizo()
 
 	return r;
 }
+int tavo()
+{
+
+	char* nombre = "Gustavo Padilla";
+	int len = strlen(nombre);
+	int i, r = 0;
+
+	for(i = 0; i < len;i++)
+	{
+		r += nombre[i];
+	}
+
+	return r;
+}
 
 int jesusAlejandro()
 {
@@ -84,6 +98,6 @@ int main()
 	printf("Mi valor en ASCCI es %i\n", diegoGarcia());
 	printf("Mi valor en ASCCI es %i\n", EzequielDelaTorre());
 	printf("Mi valor en ASCCI es %i\n", axelCruz());
+	printf("Mi valor en ASCCI es %i\n", tavo());
 	return 0;
 }
-
