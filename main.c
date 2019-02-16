@@ -14,6 +14,7 @@ int omarAlvizo()
 
 	return r;
 }
+
 int kalebJimenez()
 {
 	char* nombre = "Kaleb Jimenez";
@@ -38,6 +39,20 @@ int jairOrozco()
 	}
 
 	return r;
+}
+int leanos()
+{
+
+	char* nombre = "Antonio Leanos";
+	int len = strlen(nombre);
+	int i, r = 0;
+
+	for(i = 0; i < len;i++)
+	{
+		r += nombre[i];
+	}
+
+	return r;
 
 }
 
@@ -48,6 +63,7 @@ int main()
 	printf("Soy Kaleb y mi valor en ASCII es %i\n", kalebJimenez());
 	printf("Mi valor en ASCCI es %i \n", omarAlvizo());
 	printf("Mi valor es ASCCI es %i \n", jairOrozco());
+	printf("Mi valor en ASCCI es %i \n", leanos());
 	return 0;
-
 }
+
