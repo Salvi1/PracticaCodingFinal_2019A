@@ -16,6 +16,7 @@ int omarAlvizo()
 	return r;
 }
 
+
 int ivanOrozco(){
 
 	char* nombre = "Ivan Orozco";
@@ -26,6 +27,22 @@ int ivanOrozco(){
 	{
 		r += nombre[i];
 	}
+
+	return r;
+}
+
+int anaGonzalez()
+{
+
+	char* nombre = "Ana Gonzalez";
+	int len = strlen(nombre);
+	int i, r = 0;
+
+	for(i = 0; i < len;i++)
+	{
+		r += nombre[i];
+	}
+
 }
 
 int andreaDenise()
@@ -39,14 +56,32 @@ int andreaDenise()
 	{
 		r += nombre[i];
 	}
+	return r;
+}
+
+int leslieMorales()
+{
+
+	char* nombre = "Leslie Morales";
+	int len = strlen(nombre);
+	int i, r = 0;
+
+	for(i = 0; i < len;i++)
+	{
+		r += nombre[i];
+	}
 
 	return r;
 }
 
 int main()
 {
-	printf("Mi valor en ASCCI es %i", omarAlvizo());
-	printf("Mi valor en ASCCI es %i", ivanOrozco());
-	printf("Mi valor en ASCCI es %i", andreaDenise());
+	printf("Mi valor en ASCCI es %i \n", omarAlvizo());
+	printf("Mi valor en ASCCI es %i \n", ivanOrozco());
+	printf("Mi valor en ASCCI es %i \n", andreaDenise());
+
+	printf("Mi valor en ASCCI es %i \n", anaGonzalez());
+
+	printf("Mi valor en ASCCI es %i\n", leslieMorales());
 	return 0;
 }
